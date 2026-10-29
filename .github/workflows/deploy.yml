@@ -45,7 +45,7 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-      - run: npm install --frozen-lockfile
+      - run: npm install
       - run: npm run build
       - uses: peaceiris/actions-gh-pages@v4
         with:
