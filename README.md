@@ -1,7 +1,23 @@
 # React + Vite Template
 
-## Виконати всі попередні кроки в шаблона https://github.com/goitacademy/react-homework-template
+1. Setup:
 
-**Якщо використовуєте react-router**
+- after cloning in repo Settings => Pages => Build and deployment => Github
+  Actions
 
-### В vite.config.js додати base: "/repo_name"
+![Setup Actions](./src/assets/github-pages_actions.png)
+
+- In Settings repo Workflow permissions => set Read and write permissions and
+  Allow GitHub Actions to create and approve pull requests
+
+![Settings GitHub Actions permissions step 1](./src/assets/gh-actions%20setup.png)
+
+2. React router
+
+## If you are using react-router (Якщо ви використовуєте react-router)
+
+```jsx
+  <BrowserRouter basename="/repo_name">
+    <App />
+  </BrowserRouter>,
+```
